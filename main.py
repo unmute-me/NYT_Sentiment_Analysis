@@ -55,8 +55,8 @@ def search(query,API_KEY,file):
       #for every article title there is a newline character added to the end of it so that each title is on a new line
       file.write(text+"\n")
       
-  except:
-    print('failed')
+  except ValueError:
+    print('Could not pull content from/connect to API')
   
 
 
