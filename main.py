@@ -8,8 +8,7 @@ import datetime
 
 import time
 
-#API_KEY = "lE4wsrs7rxIDEQjbQktB8ocbFQHHF3YM"
-API_KEY = "3DnQfJqtoj3mz5gCq1E2DRwYPPh7gHW3"
+API_KEY = 
 
 def files_and_count():
   #NYT data goes back to the year 1850
