@@ -8,8 +8,8 @@ import datetime
 
 import time
 
-API_KEY =
-
+#API_KEY = "lE4wsrs7rxIDEQjbQktB8ocbFQHHF3YM"
+API_KEY = "3DnQfJqtoj3mz5gCq1E2DRwYPPh7gHW3"
 
 def files_and_count():
   #NYT data goes back to the year 1850
@@ -17,12 +17,12 @@ def files_and_count():
   today = datetime.date.today()
   year = today.year
 
-  for i in range(1850, year):
+  for i in range(1851, year):
 
     for months in range(1,13):
       
-      query = str(year) + "/"+ str(months)
-      real_file_name = str(year) + "_"+ str(months)
+      query = str(i) + "/"+ str(months)
+      real_file_name = str(i) + "_"+ str(months)
       file_name = str('txt_folder/'+ real_file_name +'.txt')
       file = open(file_name, 'w')
       
